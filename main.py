@@ -17,7 +17,7 @@ G = 5
 FPS = 60
 PLANET_RADIUS = 50
 OBJ_SIZE = 5
-VEL_SCALE = 150
+VEL_SCALE = 100
 
 #setting the images
 BG = pygame.transform.scale(pygame.image.load("background.jpg"), (WIDTH, HEIGHT))
@@ -81,7 +81,7 @@ def create_satellite(location, mouse):
     vel_x = (m_x - t_x) / VEL_SCALE
     vel_y = (m_y - t_y) / VEL_SCALE
 
-    # obj = Satellite(t_x, t_y, vel_x, vel_y, SATELLITE_MASS)
+    #obj = Satellite(t_x, t_y, vel_x, vel_y, SATELLITE_MASS)
     obj = Satellite(m_x, m_y, vel_x, vel_y, SATELLITE_MASS)
 
     return obj
