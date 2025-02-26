@@ -72,7 +72,7 @@ class Satellite:
                 y = y + 10
                 updated_points.append((x,y))
             
-            pygame.draw.lines(window, WHITE, False, updated_points, 2)
+            pygame.draw.lines(window, WHITE, False, updated_points, 1)
 
         window.blit(SATELLITE, (int(self.x), int(self.y)))
 
